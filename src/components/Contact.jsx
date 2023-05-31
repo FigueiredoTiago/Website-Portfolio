@@ -38,7 +38,6 @@ const Contact = () => {
           if (response.status === 200) {
             setStatus("Sua mensagem foi enviada com sucesso, Obrigado!");
             setButtonText("Send");
-            setStatus(" ");
           }
         },
         function (error) {
