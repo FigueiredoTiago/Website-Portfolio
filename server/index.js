@@ -6,6 +6,8 @@ import express, { Router, json } from "express";
 const router = Router();
 import cors from "cors";
 import { createTransport } from "nodemailer";
+import path from 'path';
+import bodyParser from 'body-parser';
 
 // server used to send send emails
 const app = express();
@@ -33,7 +35,7 @@ contactEmail.verify((error) => {
     }
 });
 
-router.post("/contact", (req, res) => {
+app.post("/contact", bodyParser.urlencoded(), (req, res) => {
     const name = req.body.firstName + req.body.lastName;
     const email = req.body.email;
     const message = req.body.message;
@@ -55,3 +57,7 @@ router.post("/contact", (req, res) => {
         }
     });
 }); 
+
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../build', 'index.html'));
+});
