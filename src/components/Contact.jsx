@@ -31,13 +31,14 @@ const Contact = () => {
         "service_f1rq3he",
         "template_5zredmy",
         templateParams,
-        "Lw8qGVK6c48mANS59"
+        "Lw8qGVK6c48mANS56"
       )
       .then(
         function (response) {
           if (response.status === 200) {
             setStatus("Sua mensagem foi enviada com sucesso, Obrigado!");
             setButtonText("Send");
+            setStatus(" ");
           }
         },
         function (error) {
