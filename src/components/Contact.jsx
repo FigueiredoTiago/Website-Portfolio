@@ -2,10 +2,12 @@ import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [buttonText, setButtonText] = useState("Send");
-  const [status, setStatus] = useState({});
+  const [status, setStatus] = useState("");
+  const [err, setErr] = useState("");
 
   const {
     register,
@@ -13,31 +15,39 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
+  const onSubmit = (data) => {
+    setButtonText("Sending..."), setErr(" ");
+    setStatus(" ");
 
-  const onSubmit = async (data) => {
-    console.log(data);
+    const templateParams = {
+      from_name: data.firstName,
+      message: data.message,
+      email: data.email,
+      phone: data.phone,
+    };
 
-    setButtonText("Sending...");
-
-    let response = await fetch("/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(data),
-    });
-    setButtonText("Send");
-
-    let result = await response.json();
-    
-    if (result.code == 200) {
-      setStatus({ succes: true, message: "Message sent successfully" });
-    } else {
-      setStatus({
-        succes: false,
-        message: "Something went wrong, please try again later.",
-      });
-    }
+    emailjs
+      .send(
+        "service_f1rq3he",
+        "template_5zredmy",
+        templateParams,
+        "Lw8qGVK6c48mANS59"
+      )
+      .then(
+        function (response) {
+          if (response.status === 200) {
+            setStatus("Sua mensagem foi enviada com sucesso, Obrigado!");
+            setButtonText("Send");
+          }
+        },
+        function (error) {
+          if (error) {
+            setErr(`Ocorreu um erro, tente novamente mais tarde! cod: ${error.status} = 
+            ${error.text}`);
+            setButtonText("Send");
+          }
+        }
+      );
   };
 
   return (
@@ -112,15 +122,15 @@ const Contact = () => {
                   )}
                 </Col>
 
-                {status.message && (
+                {status && (
                   <Col>
-                    <p
-                      className={
-                        status.success === false ? "danger" : "success"
-                      }
-                    >
-                      {status.message}
-                    </p>
+                    <p className="success">{status}</p>
+                  </Col>
+                )}
+
+                {err && (
+                  <Col>
+                    <p className="danger">{err}</p>
                   </Col>
                 )}
               </row>
