@@ -46,10 +46,7 @@ const Skills = () => {
                   <div className="skill-bx">
                     <h2>Skills</h2>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Hic debitis, accusamus quaerat perferendis quam, qui
-                      numquam corporis minus maxime incidunt sunt iste atque a
-                      quidem harum ipsa veniam. Optio, voluptate?
+                      Minhas Skills e Tecnologias que estou usando Atualmente, Caso queira saber um Pouco mais acesse meu perfil no Linkedin.
                     </p>
                     <Carousel
                       className="skill-slider"

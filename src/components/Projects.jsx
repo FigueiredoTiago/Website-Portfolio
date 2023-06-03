@@ -54,10 +54,7 @@ const Projects = () => {
           <Col size={12}>
             <h2>Projects</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              natus voluptatum magnam ex architecto. Numquam, in similique?
-              Facere possimus aliquid excepturi quam magnam, velit esse
-              provident blanditiis recusandae inventore commodi.
+              Alguns de Meus Projetos Pessoais, Todos estão no meu GitHub, caso queira ver mais detalhes, basta clicar no botão do GitHub na NavBar.
             </p>
             <TabContainer id="projects-tabs" defaultActiveKey="first">
               <Nav
