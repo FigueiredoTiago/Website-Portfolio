@@ -39,8 +39,8 @@ const Skills = () => {
                 <div
                   className={
                     isVisible
-                      ? "animate__animated animate__lightSpeedInLeft animate__fast"
-                      : "animate__animated animate__lightSpeedOutRight"
+                      ? "animate__animated animate__zoomIn"
+                      : ""
                   }
                 >
                   <div className="skill-bx">

@@ -58,7 +58,7 @@ const Banner = () => {
                   className={
                     isVisible
                       ? "animate__animated animate__backInDown animate__fast"
-                      : "animate__animated animate__backOutUp"
+                      : ""
                   }
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
