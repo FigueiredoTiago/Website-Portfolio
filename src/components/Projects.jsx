@@ -71,9 +71,6 @@ const Projects = () => {
                 <Nav.Item>
                   <Nav.Link eventKey="second">Tab two</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Tab three</Nav.Link>
-                </Nav.Item>
               </Nav>
               <TabContent>
                 <TabPane eventKey="first">

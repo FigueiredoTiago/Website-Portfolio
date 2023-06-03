@@ -420,7 +420,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 72%;
     margin: 0 auto;
     border-radius: 50px;
-    background-color: rgb(255 255 255 / 10%);
+    
     overflow: hidden;
 }
 
@@ -429,7 +429,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project .nav.nav-pills .nav-link {
-    background-color: transparent;
+    background-color: rgb(51, 48, 48);
     border-radius: 0;
     padding: 17px 0;
     color: #fff;
@@ -449,6 +449,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 0;
     height: 100%;
     background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    border-radius:55px 55px 55px 55px;
     top: 0;
     left: 0;
     z-index: -1;
@@ -459,18 +460,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 100% !important;
 }
 
-.project .nav.nav-pills .nav-link.active {
-    border: 1px solid rgba(255, 255, 255, 1);
-}
 
 .nav-link#projects-tabs-tab-first {
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    
     border-radius: 55px 0px 0px 55px;
 }
 
 .nav-link#projects-tabs-tab-second {
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    
+    border-radius: 0 55px 55px 0;
 }
 
 .nav-link#projects-tabs-tab-third {
