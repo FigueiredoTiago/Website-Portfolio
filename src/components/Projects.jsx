@@ -6,9 +6,18 @@ import {
   TabContent,
   TabPane,
 } from "react-bootstrap";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/hydra.png";
+import projImg2 from "../assets/img/dogs.png";
+import projImg3 from "../assets/img/bikers.png";
+import projImg4 from "../assets/img/batman.png";
+import projImg5 from "../assets/img/canada.png";
+import projImg6 from "../assets/img/spider.png";
+import projImg7 from "../assets/img/fintech.png";
+import projImg8 from "../assets/img/movie.png";
+import projImg9 from "../assets/img/tempo.png";
+import projImg10 from "../assets/img/portfolio.png";
+import projImg11 from "../assets/img/login.png";
+import projImg12 from "../assets/img/tenis.png";
 import Nav from "react-bootstrap/Nav";
 import ProjectCard from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -33,17 +42,50 @@ const Projects = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: projImg4,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: projImg5,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: projImg6,
+    },
+  ];
+
+  const projects2 = [
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg7,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg8,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg9,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg10,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg11,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg12,
     },
   ];
 
@@ -70,6 +112,7 @@ const Projects = () => {
                 </Nav.Item>
               </Nav>
               <TabContent>
+                
                 <TabPane eventKey="first">
                   <Row>
                     {projects.map((project, index) => (
@@ -78,6 +121,17 @@ const Projects = () => {
                   </Row>
                 </TabPane>
               </TabContent>
+              <TabContent>
+
+                <TabPane eventKey="second">
+                  <Row>
+                    {projects2.map((project, index) => (
+                      <ProjectCard {...project} key={index} />
+                    ))}
+                  </Row>
+                </TabPane>
+              </TabContent>
+
             </TabContainer>
           </Col>
         </Row>
