@@ -96,7 +96,9 @@ const Projects = () => {
           <Col size={12}>
             <h2>Projects</h2>
             <p>
-              Alguns de Meus Projetos Pessoais, Todos estão no meu GitHub, caso queira ver mais detalhes, basta clicar no botão do GitHub na NavBar.
+              Alguns de Meus Projetos Pessoais, Todos estão no meu GitHub, caso
+              queira ver mais detalhes, basta clicar no botão do GitHub na
+              NavBar.
             </p>
             <TabContainer id="projects-tabs" defaultActiveKey="first">
               <Nav
@@ -112,7 +114,6 @@ const Projects = () => {
                 </Nav.Item>
               </Nav>
               <TabContent>
-                
                 <TabPane eventKey="first">
                   <Row>
                     {projects.map((project, index) => (
@@ -122,7 +123,6 @@ const Projects = () => {
                 </TabPane>
               </TabContent>
               <TabContent>
-
                 <TabPane eventKey="second">
                   <Row>
                     {projects2.map((project, index) => (
@@ -131,7 +131,6 @@ const Projects = () => {
                   </Row>
                 </TabPane>
               </TabContent>
-
             </TabContainer>
           </Col>
         </Row>

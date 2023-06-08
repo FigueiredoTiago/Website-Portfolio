@@ -59,14 +59,26 @@ const Skills = () => {
                       </div>
                       <div className="item">
                         <img src={meter1} alt="skill image" />
-                        <h5>React</h5>
+                        <h5>HTML</h5>
+                      </div>
+                      <div className="item">
+                        <img src={meter1} alt="skill image" />
+                        <h5>CSS</h5>
                       </div>
                       <div className="item">
                         <img src={meter2} alt="skill image" />
-                        <h5>JavaScript</h5>
+                        <h5>SASS</h5>
+                      </div>
+                      <div className="item">
+                        <img src={meter2} alt="skill image" />
+                        <h5>ReactJS</h5>
                       </div>
                       <div className="item">
                         <img src={meter3} alt="skill image" />
+                        <h5>JavaScript</h5>
+                      </div>
+                      <div className="item">
+                        <img src={meter2} alt="skill image" />
                         <h5>TypeScript</h5>
                       </div>
                     </Carousel>
