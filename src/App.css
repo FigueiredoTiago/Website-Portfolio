@@ -100,6 +100,12 @@ nav.navbar {
     transition: 0.32s ease-in-out;
 }
 
+.logo {
+    padding: 0;
+    margin: 0;
+    width:130px;
+}
+
 nav.navbar.scrolled {
     padding: 0px 0;
     background-color: #121212;
