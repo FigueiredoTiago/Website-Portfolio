@@ -58,7 +58,7 @@ const Contact = () => {
             <img src={contactImg} />
           </Col>
           <Col md={6}>
-            <h2>Get In Touch</h2>
+            <h2>Fale com o Desenvolvedor!</h2>
 
             <form method="POST">
               <row>
