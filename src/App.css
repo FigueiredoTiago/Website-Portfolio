@@ -25,6 +25,18 @@ html {
     scroll-padding-top: 75px;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(90deg, #AA367C, #4A2FBD);
+}
+
 body {
     font-weight: 400;
     overflow-x: hidden;
