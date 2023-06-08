@@ -9,7 +9,7 @@ const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(400 - Math.random() * 100);
   const period = 2000;
 
   useEffect(() => {
@@ -67,10 +67,12 @@ const Banner = () => {
                     <span className="wrap">{text}</span>{" "}
                   </h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatibus, et. Alias eveniet aut, minima quae eaque nemo
-                    in! Nostrum voluptas soluta maxime rem reprehenderit, sequi
-                    ut a corrupti odit dolore.
+                    Sou um Desenvolvedor com foco em Frontend, Desenvolvo Sites
+                    e Aplicações Web com as Tecnologias mais Modernas do Mercado
+                    como React, NextJS, Styled Components, Bootstrap, Sass,
+                    entre outras, Caso queira saber um Pouco mais sobre mim,
+                    envie uma mensagem Clicando no Botão abaixo ou acesse meu
+                    perfil no Linkedin.
                   </p>
                   <a href="#connect">
                     <button>
