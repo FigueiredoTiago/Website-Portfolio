@@ -25,66 +25,66 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Hydra Landing Page",
+      description: "Development",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Social Media Dogs",
+      description: "Development",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
+      title: "Bikers Shop",
       description: "Design & Development",
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Batman Landing Page",
+      description: "Development",
       imgUrl: projImg4,
     },
     {
-      title: "Business Startup",
+      title: "Canada Website",
       description: "Design & Development",
       imgUrl: projImg5,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "SpiderMan Multverse",
+      description: "Development",
       imgUrl: projImg6,
     },
   ];
 
   const projects2 = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Fintech Startup",
+      description: "Development",
       imgUrl: projImg7,
     },
     {
-      title: "Business Startup",
+      title: "Movies Lib",
       description: "Design & Development",
       imgUrl: projImg8,
     },
     {
-      title: "Business Startup",
+      title: "Wether App PWA",
       description: "Design & Development",
       imgUrl: projImg9,
     },
     {
-      title: "Business Startup",
+      title: "WebSite Portfolio",
       description: "Design & Development",
       imgUrl: projImg10,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Login Page",
+      description: "Development",
       imgUrl: projImg11,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Nike Landing Page",
+      description: "Development",
       imgUrl: projImg12,
     },
   ];
