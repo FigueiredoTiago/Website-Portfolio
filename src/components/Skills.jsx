@@ -3,9 +3,15 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import TrackVisibility from "react-on-screen";
 
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import reactIcon from "../assets/img/reactIcon.svg";
+import html from "../assets/img/html.png";
+import css from "../assets/img/css.png";
+import js from "../assets/img/js.png";
+import ts from "../assets/img/ts.png";
+import sass from "../assets/img/sass.png";
+import dev from "../assets/img/dev.png";
+import git from "../assets/img/git.png";
+import github from "../assets/img/github.png";
 import colorSharp from "../assets/img/color-sharp.png";
 
 const Skills = () => {
@@ -54,32 +60,40 @@ const Skills = () => {
                       infinite={true}
                     >
                       <div className="item">
-                        <img src={meter1} alt="skill image" />
+                        <img src={dev} alt="skill image" />
                         <h5>Web Development</h5>
                       </div>
                       <div className="item">
-                        <img src={meter1} alt="skill image" />
+                        <img src={html} alt="skill image" />
                         <h5>HTML</h5>
                       </div>
                       <div className="item">
-                        <img src={meter1} alt="skill image" />
+                        <img src={css} alt="skill image" />
                         <h5>CSS</h5>
                       </div>
                       <div className="item">
-                        <img src={meter2} alt="skill image" />
+                        <img src={sass} alt="skill image" />
                         <h5>SASS</h5>
                       </div>
                       <div className="item">
-                        <img src={meter2} alt="skill image" />
+                        <img src={reactIcon} alt="skill image" />
                         <h5>ReactJS</h5>
                       </div>
                       <div className="item">
-                        <img src={meter3} alt="skill image" />
+                        <img src={js} alt="skill image" />
                         <h5>JavaScript</h5>
                       </div>
                       <div className="item">
-                        <img src={meter2} alt="skill image" />
+                        <img src={ts} alt="skill image" />
                         <h5>TypeScript</h5>
+                      </div>
+                      <div className="item">
+                        <img src={git} alt="skill image" />
+                        <h5>GIT</h5>
+                      </div>
+                      <div className="item">
+                        <img src={github} alt="skill image" />
+                        <h5>GITHUB</h5>
                       </div>
                     </Carousel>
                   </div>
